@@ -11,6 +11,7 @@ _myservice()
     local cur prev opts
     COMPREPLY=()
     cur="${COMP_WORDS[COMP_CWORD]}"
+    # prev = the last option entered on the command line
     prev="${COMP_WORDS[COMP_CWORD-1]}"
     opts="start stop status"
 
